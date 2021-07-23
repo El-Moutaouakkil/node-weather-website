@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+       <div class="container">
+            {{>header}}
+        <p>Use this site to get your weather</p>
+
+        <form action="">
+            <input type="text" placeholder="Location">
+            <button>search</button>
+        </form>
+
+
+        {{!-- <h1> {{title}} </h1> --}}
+        {{!-- <p>Created by {{name}} </p> --}}
+
+        {{>footer}}
+       </div>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+             width: 100vw;
+             height: 100vh;
+             display: grid;
+             place-items: center;   
+            }
+          h1{
+              margin-bottom: 25px;
+          }
+          input{
+              margin : 10px 0 35px;
+          }
+        </style>
+        <script src="js/app.js"></script>
+    </body>
+</html>
